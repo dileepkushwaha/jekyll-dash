@@ -1,13 +1,11 @@
-title: dash
-author: GitHub User
-email: miguel-gonzalez@gmx.de
+title: ~/Dileep/Blog$
+author: Dileep Kushwaha
+email: dileepkushwaha@hotmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: false # set to true to show excerpts on the homepage
+  A personal blog about technical things I find useful. Also, random ramblings and rants...
+show_excerpts: true # set to true to show excerpts on the homepage
 
-paginate: 1
+paginate: 5
 paginate_path: "/blog/page:num/"
 
 tag_permalink_style: pretty
@@ -18,22 +16,32 @@ tag_page_dir: tag
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 dash:
   date_format: "%b %-d, %Y"
+  #date_format: "%d %-b, %Y"
 
-  disqus:
-    shortname: bitbrain-github-io
+  #disqus:
+  #  shortname: dileepkushwaha-github-io-blogbitbrain-github-io
 
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/bitbrain_
+    - url: https://twitter.com/dileepkush
       icon: twitter-square
       color: cyan
-    - url: https://bitbrain.itch.io
-      icon: itch-io
-      color: red
-    - url: https://github.com/bitbrain
+    - url: https://github.com/dileepkushwaha
       icon: github-square
       color: purple
+    - url: https://fosstodon.org/@dileepkushwaha
+      icon: mastodon
+      color: orange
+    - url: https://steamcommunity.com/id/roo00t
+      icon: steam-square
+      color: green
+    - url: https://www.linkedin.com/in/kushwahadileep/
+      icon: linkedin
+      color: purple
+    - url: https://dileepkushwaha.github.io/resume/
+      icon: font-awesome
+      color: teal
 
 # Build settings
 theme: jekyll-dash
@@ -44,3 +52,8 @@ plugins:
  - jekyll-paginate
  - liquid-md5
  - jekyll/tagging
+ - jemoji
+
+ # jemoji settings
+emoji:
+  src: "https://github.githubassets.com/images/icons/"

@@ -132,6 +132,14 @@
     width: 100%;
   }
 
+  img.emoji {
+    //fixed emojis to take custum style and avoiding stretching
+    display: inline;
+    height: 1em;
+    width: 1em;
+    margin-bottom: 0.25em;
+}
+
   ol > li {
     margin-left: 1em;
     text-align: left;
@@ -247,14 +255,14 @@
 }
 
 .credits {
-  font-size: 10px;
+  font-size: 20px;
   @include themed() {
-     color: lighten(t('background-color'), 5%);
+     color: lighten(t('background-color'), 25%);
   }
 
   & > a {
     @include themed() {
-         color: lighten(t('background-color'), 10%);
+         color: lighten(t('background-color'), 50%);
     }
     text-decoration: underline;
   }

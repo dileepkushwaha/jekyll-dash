@@ -132,7 +132,7 @@ a {
  */
 blockquote {
   @include themed() {
-        color: t('background-color');
+        color: t('foreground-color');
   }
   @include relative-font-size(1.125);
   letter-spacing: -1px;
